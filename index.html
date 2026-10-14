@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff7f7">
+<meta name="description" content="Sajak Sendu — ruang kecil untuk kata, senja, dan hal-hal yang tak sempat diucapkan.">
+<title>Sajak Sendu — Ruang Kecil untuk Kata</title>
+<style>
+:root{--paper:#fff9f7;--pink:#f2d9dc;--rose:#bd7d88;--deep:#593d43;--ink:#33282b;--muted:#88777b;--line:#eadcdf;--white:#fffefe;--shadow:0 18px 50px #7b4c5812}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.serif,h1,h2,h3,.brand,.quote{font-family:Georgia,"Times New Roman",serif;font-weight:400}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topline{height:5px;background:linear-gradient(90deg,#eac7cd,#f8e9e9,#c78e98)}header{position:sticky;top:0;z-index:20;background:#fff9f7eF;backdrop-filter:blur(14px);border-bottom:1px solid #eadcdfaa}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.6rem;letter-spacing:.02em;color:var(--deep)}.brand small{display:block;font: .62rem/1.3 ui-sans-serif,system-ui;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}.navlinks{display:flex;align-items:center;gap:26px;font-size:.9rem;color:#6e5b60}.navlinks a:hover{color:var(--rose)}.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:12px;padding:8px 12px;color:var(--deep)}.hero{padding:70px 0 58px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}.eyebrow:before{content:"";width:28px;height:1px;background:var(--rose)}h1{font-size:clamp(3rem,6vw,5.6rem);line-height:.99;letter-spacing:-.045em;color:var(--deep);margin:22px 0}.hero h1 em{color:var(--rose);font-weight:400}.hero-copy{max-width:480px;color:#7d6a6e;font-size:1rem}.actions{display:flex;gap:12px;align-items:center;margin-top:28px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--rose);background:var(--rose);color:white;padding:12px 20px;border-radius:3px;font-size:.87rem;cursor:pointer;transition:.2s}.btn:hover{background:var(--deep);border-color:var(--deep);transform:translateY(-1px)}.btn-ghost{background:transparent;color:var(--deep);border-color:var(--line)}.btn-ghost:hover{color:white}.hero-art{position:relative;min-height:405px;border-radius:48% 48% 4px 4px;overflow:hidden;background:linear-gradient(180deg,#e9b8bd 0%,#f3c9c1 40%,#e9a99d 67%,#8d5964 100%);box-shadow:var(--shadow)}.hero-art:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:#ffe9c9;top:74px;left:50%;transform:translateX(-50%);box-shadow:0 0 65px #ffe7c4a8}.horizon{position:absolute;bottom:0;left:0;right:0;height:42%;background:linear-gradient(180deg,#a86c75aa,#4d3a48)}.hill{position:absolute;bottom:18%;width:120%;height:35%;left:-10%;border-radius:50% 50% 0 0;background:#9b6877;transform:rotate(-7deg)}.hill.two{bottom:7%;left:-5%;background:#684957;transform:rotate(5deg);height:31%}.hero-note{position:absolute;bottom:25px;left:25px;right:25px;padding:18px 20px;background:#fff9f0dd;backdrop-filter:blur(8px);color:var(--deep);font:italic 1.2rem/1.45 Georgia,serif}.hero-note span{display:block;font: .68rem ui-sans-serif,system-ui;letter-spacing:.16em;text-transform:uppercase;margin-top:9px;color:#9a6d76}.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;color:#a4777f;text-align:center;font:italic 1.05rem Georgia,serif;letter-spacing:.04em}.section{padding:72px 0}.section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:28px}.kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--rose)}h2{font-size:clamp(2rem,4vw,3rem);color:var(--deep);margin:8px 0 0;line-height:1.1}.section-sub{color:var(--muted);font-size:.9rem;max-width:340px;margin:0}.toolbar{display:flex;align-items:center;gap:14px;margin:0 0 28px;flex-wrap:wrap}.searchbox{position:relative;flex:1;min-width:220px}.searchbox span{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#a7868c}.searchbox input{width:100%;padding:12px 14px 12px 42px;border:1px solid var(--line);border-radius:3px;background:#fffdfc;outline:none;color:var(--ink)}.searchbox input:focus{border-color:var(--rose);box-shadow:0 0 0 3px #bd7d8819}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;color:#846f74;border-radius:30px;padding:9px 14px;font-size:.82rem;cursor:pointer}.filter.active,.filter:hover{background:var(--deep);color:#fff;border-color:var(--deep)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.post-card{background:var(--white);border:1px solid #efE2e4;transition:transform .25s,box-shadow .25s;cursor:pointer;min-width:0}.post-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card-art{height:180px;position:relative;overflow:hidden;background:linear-gradient(145deg,#f2dadd,#dfadb5)}.card-art:before{content:"";position:absolute;width:115px;height:115px;border-radius:50%;background:#ffedcf;top:22px;right:30px;opacity:.95}.card-art:after{content:"";position:absolute;width:130%;height:90px;left:-10%;bottom:-25px;border-radius:50% 50% 0 0;background:#a56c79;transform:rotate(-8deg)}.card-art.art-2{background:linear-gradient(145deg,#d9c7c9,#f3d4c7)}.card-art.art-2:before{width:100px;height:100px;top:38px;right:70px;background:#f9e5c7}.card-art.art-2:after{background:#71606b;transform:rotate(8deg);bottom:-35px}.card-art.art-3{background:linear-gradient(145deg,#e5b7b9,#b77d89)}.card-art.art-3:before{top:40px;right:45%;background:#f8ddc0}.card-art.art-3:after{background:#76515e;transform:rotate(-4deg)}.card-art.art-4{background:linear-gradient(145deg,#e8c9ba,#c88c91)}.card-art.art-4:after{background:#5d4654}.card-art.art-5{background:linear-gradient(145deg,#e9d9d8,#d99da7)}.card-art.art-5:after{background:#99707c}.card-art.art-6{background:linear-gradient(145deg,#d5c3c8,#e8b4b6)}.card-art.art-6:after{background:#67515f}.art-label{position:absolute;left:15px;top:15px;z-index:2;background:#fff9f0e8;padding:5px 9px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--deep)}.card-body{padding:21px}.meta{font-size:.72rem;color:#a07f86;letter-spacing:.04em}.post-card h3{font-size:1.45rem;line-height:1.18;color:var(--deep);margin:10px 0}.excerpt{font-size:.87rem;color:#857277;margin:0 0 18px}.readmore{font-size:.8rem;color:var(--rose);display:inline-flex;align-items:center;gap:8px}.empty{grid-column:1/-1;padding:50px 20px;text-align:center;border:1px dashed var(--line);color:var(--muted)}.about{background:#f7e9e9}.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}.about-mark{aspect-ratio:1;max-width:300px;border:1px solid #d8b3ba;border-radius:50%;display:grid;place-items:center;margin:auto;color:var(--rose);font:italic 5rem Georgia,serif;position:relative}.about-mark:before,.about-mark:after{content:"";position:absolute;border:1px solid #d8b3ba;border-radius:50%;inset:14px}.about-mark:after{inset:28px}.about-copy{color:#79676c;max-width:620px}.about-copy p{margin:18px 0}.quote{font-size:1.55rem;line-height:1.45;color:var(--deep);border-left:2px solid var(--rose);padding-left:22px;margin:24px 0}.newsletter{padding:64px 0;text-align:center}.newsletter p{color:var(--muted);max-width:450px;margin:14px auto 24px}.subscribe{display:flex;max-width:470px;margin:auto;gap:8px}.subscribe input{min-width:0;flex:1;padding:12px 14px;border:1px solid var(--line);background:#fffdfc;outline:none}.subscribe input:focus{border-color:var(--rose)}.form-msg{font-size:.82rem;color:var(--rose);min-height:1.5em;margin-top:10px}footer{background:#513a42;color:#f8e9e9;padding:28px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:.78rem;color:#ddc7cb}.foot .brand{color:#fff0f0;font-size:1.25rem}.foot-links{display:flex;gap:18px}.modal{position:fixed;inset:0;background:#30232bbd;z-index:40;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-panel{background:var(--paper);width:min(720px,100%);max-height:90vh;overflow:auto;padding:clamp(24px,5vw,48px);position:relative;box-shadow:0 25px 80px #0003}.modal-close{position:absolute;right:16px;top:14px;border:1px solid var(--line);background:transparent;border-radius:50%;width:38px;height:38px;cursor:pointer;color:var(--deep)}.modal-category{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}.modal h2{font-size:clamp(2.1rem,5vw,3.5rem);margin:14px 40px 10px 0}.modal-date{font-size:.78rem;color:var(--muted);margin-bottom:28px}.modal-content{font-family:Georgia,serif;font-size:1.08rem;line-height:1.95;color:#66545a;white-space:pre-line}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--deep);color:white;padding:11px 17px;font-size:.85rem;box-shadow:var(--shadow);z-index:60;display:none}.toast.show{display:block}
+@media(max-width:800px){.hero{padding:45px 0}.hero-grid{grid-template-columns:1fr;gap:30px}.hero-art{min-height:340px;max-width:540px;width:100%;margin:auto}.hero-copy{max-width:600px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid{grid-template-columns:1fr;gap:28px}.about-mark{max-width:190px;font-size:3.5rem}.navlinks{gap:15px}.section{padding:55px 0}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}.nav{height:68px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:18px 20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:14px}.navlinks.show{display:flex}.brand{font-size:1.4rem}.hero{padding:38px 0}.hero-grid{gap:26px}h1{font-size:3.35rem}.hero-art{min-height:315px}.hero-note{font-size:1.05rem;left:16px;right:16px;bottom:16px}.section{padding:48px 0}.section-head{align-items:flex-start;flex-direction:column;gap:10px}.cards{grid-template-columns:1fr;gap:16px}.card-art{height:170px}.card-body{padding:18px}.toolbar{align-items:stretch}.searchbox{flex-basis:100%}.filters{gap:7px}.filter{font-size:.78rem;padding:8px 11px}.subscribe{flex-direction:column}.subscribe .btn{width:100%}.foot{flex-direction:column;text-align:center}.foot-links{justify-content:center}.quote{font-size:1.3rem}.marquee{font-size:.94rem;padding:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">sajak sendu<small>ruang untuk kata & rasa</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navLinks" aria-label="Navigasi utama">
+      <a href="#home">Beranda</a><a href="#tulisan">Tulisan</a><a href="#tentang">Tentang</a><a href="#surat">Surat kecil</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Catatan dari hati</div>
+      <h1>Ada hal-hal<br>yang hanya bisa<br><em>pulang lewat</em><br>tulisan.</h1>
+      <p class="hero-copy">Sebuah ruang kecil untuk menyimpan yang nyaris terlupa: percakapan yang tertinggal, langit yang berubah warna, dan perasaan yang belum menemukan nama.</p>
+      <div class="actions"><a class="btn" href="#tulisan">Jelajahi tulisan <span>↗</span></a><a class="btn btn-ghost" href="#tentang">Kenali ruang ini</a></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Ilustrasi matahari senja berwarna merah muda di balik perbukitan">
+      <div class="horizon"></div><div class="hill"></div><div class="hill two"></div>
+      <div class="hero-note">“Barangkali, menulis adalah cara paling lembut untuk tetap tinggal.”<span>— catatan senja, no. 01</span></div>
+    </div>
+  </div>
+</section>
+<div class="marquee">pelan-pelan saja, tidak semua yang indah harus segera sampai ✳</div>
+<section class="section" id="tulisan">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Dari halaman ke halaman</div><h2>Tulisan pilihan</h2></div><p class="section-sub">Baca pelan-pelan. Mungkin ada satu dua kalimat yang terasa seperti mengenalmu.</p></div>
+    <div class="toolbar">
+      <label class="searchbox"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Cari judul atau isi tulisan..." aria-label="Cari artikel"></label>
+      <div class="filters" id="filters" aria-label="Filter kategori">
+        <button class="filter active" data-category="Semua">Semua</button>
+        <button class="filter" data-category="Puisi">Puisi</button>
+        <button class="filter" data-category="Refleksi">Refleksi</button>
+        <button class="filter" data-category="Cerita">Cerita</button>
+      </div>
+    </div>
+    <div class="cards" id="postGrid" aria-live="polite"></div>
+  </div>
+</section>
+<section class="section about" id="tentang">
+  <div class="wrap about-grid">
+    <div class="about-mark" aria-hidden="true">ss</div>
+    <div class="about-copy"><div class="kicker">Sedikit tentang ruang ini</div><h2>Tempat kata-kata<br>boleh beristirahat.</h2>
+      <p>Sajak Sendu adalah jurnal pribadi tentang hal-hal sederhana yang kadang terasa begitu besar: kehilangan, tumbuh, pulang, dan belajar menerima hidup tanpa harus memahami semuanya sekaligus.</p>
+      <blockquote class="quote">“Tidak semua yang kita rasakan perlu segera selesai. Ada yang hanya ingin didengar, lalu dibiarkan bernapas.”</blockquote>
+      <p>Ambil secangkir minuman hangat, cari tempat paling nyaman, dan singgahlah selama yang kamu mau.</p>
+    </div>
+  </div>
+</section>
+<section class="newsletter" id="surat">
+  <div class="wrap"><div class="kicker">Surat kecil dari senja</div><h2>Singgah lagi, ya.</h2><p>Tinggalkan emailmu untuk mencoba formulir surat kecil ini. Demo ini berjalan di browser dan belum mengirim email sungguhan.</p>
+    <form class="subscribe" id="subscribeForm"><input id="emailInput" type="email" placeholder="Alamat email kamu" aria-label="Alamat email" required><button class="btn" type="submit">Titip surat ↗</button></form>
+    <div class="form-msg" id="formMsg" aria-live="polite"></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home">sajak sendu</a><span>© <span id="year"></span> Sajak Sendu · ditulis dengan pelan-pelan.</span><div class="foot-links"><a href="#tulisan">Tulisan</a><a href="#tentang">Tentang</a><a href="#home">Kembali ke atas ↑</a></div></div></footer>
+<div class="modal" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <article class="modal-panel"><button class="modal-close" id="modalClose" aria-label="Tutup artikel">×</button><div class="modal-category" id="modalCategory"></div><h2 id="modalTitle"></h2><div class="modal-date" id="modalDate"></div><div class="modal-content" id="modalContent"></div></article>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const posts = [
+ {id:1,title:"Kamu dan Seporsi Ramen",category:"Cerita",date:"14 Oktober 2026",read:"4 menit",art:"art-1",excerpt:"Di antara uap ramen dan kaca yang berembun, ada percakapan sederhana yang diam-diam ingin kuingat lebih lama.",content:`Restoran itu tidak terlalu ramai. Hanya ada bunyi sendok yang sesekali menyentuh mangkuk, dan hujan kecil yang menulis garis-garis tipis di kaca jendela.\n\nKamu duduk di hadapanku, sibuk mengaduk kuah ramen yang masih mengepul. Kita membicarakan hal-hal remeh: jalanan yang macet, lagu yang terus terputar, dan betapa anehnya waktu ketika seseorang membuatnya terasa lambat.\n\nAku tidak ingat persis apa yang kamu katakan setelah itu. Barangkali karena aku terlalu sibuk memperhatikan caramu tertawa. Yang kuingat hanya aroma shoyu, lampu hangat di atas meja, dan perasaan pulang yang datang bahkan sebelum malam berakhir.\n\nSejak itu aku tahu, kadang yang membuat sebuah tempat istimewa bukanlah makanannya. Melainkan seseorang yang membuat kita ingin tinggal lima menit lebih lama.`},
+ {id:2,title:"Belajar Berdamai dengan Sepi",category:"Refleksi",date:"10 Oktober 2026",read:"3 menit",art:"art-2",excerpt:"Sepi tidak selalu meminta kita mencari keramaian. Kadang ia hanya mengajak kita duduk sebentar dan mendengar diri sendiri.",content:`Dulu kupikir sepi adalah ruangan kosong yang harus segera diisi. Dengan suara, pertemuan, kesibukan, atau apa saja yang membuatku lupa bahwa aku sedang sendirian.\n\nBelakangan aku belajar: tidak semua ruang kosong adalah sesuatu yang salah. Ada jeda yang memang dibutuhkan hati agar bisa mengenali suaranya sendiri.\n\nBerdamai dengan sepi bukan berarti berhenti menginginkan teman. Bukan pula berpura-pura kuat dan tidak membutuhkan siapa-siapa. Kita tetap manusia; tetap ingin didengar, dipeluk oleh percakapan, dan dianggap ada.\n\nNamun, sembari menunggu orang-orang yang tepat, kita boleh belajar menemani diri sendiri. Menyeduh teh. Membuka jendela. Menyelesaikan satu halaman buku. Menyadari bahwa hari ini, meski sederhana, tetap layak dijalani.\n\nMungkin damai bukan ketika sepi pergi. Mungkin damai adalah saat kita tidak lagi menganggap kehadirannya sebagai bukti bahwa ada yang salah dengan diri kita.`},
+ {id:3,title:"Di Bawah Langit yang Sama",category:"Puisi",date:"7 Oktober 2026",read:"2 menit",art:"art-3",excerpt:"Untuk jarak yang belum bisa dijembatani, dan nama yang masih diam-diam disebut dalam doa.",content:`di bawah langit yang sama,\naku menyimpan kabar\npada angin yang tak pernah berjanji\nakan membawanya sampai.\n\nada jarak yang tak bisa dihitung\noleh peta dan jam,\nada rindu yang memilih diam\nagar tidak mengganggu malam.\n\njika suatu hari kita bertemu\npada musim yang lebih ramah,\nsemoga kita masih mengenali\ncara mata kita bercerita.\n\nsampai saat itu,\nbiarlah langit menjadi saksi:\nkita pernah saling mengingat,\nmeski dunia berjalan ke arah berbeda.`},
+ {id:4,title:"Surat untuk Diriku yang Dulu",category:"Refleksi",date:"2 Oktober 2026",read:"4 menit",art:"art-4",excerpt:"Andai aku bisa duduk sebentar di samping diriku yang dulu, ada banyak hal yang ingin kusampaikan dengan lembut.",content:`Hai, kamu.\n\nAku tahu kamu sedang berusaha keras terlihat baik-baik saja. Kamu mengira semua orang sudah tahu arah hidupnya, sementara kamu masih meraba-raba jalan sendiri.\n\nAku tidak akan memberimu daftar jawaban. Nyatanya, sampai hari ini pun aku masih belajar. Ada rencana yang berubah, orang yang pergi, dan hari-hari ketika bangun dari tempat tidur saja terasa seperti pekerjaan besar.\n\nTapi dengar, ya: kamu tidak harus menyelesaikan seluruh hidupmu sekaligus. Kamu boleh memulai dari hal kecil. Boleh berubah pikiran. Boleh beristirahat tanpa menyebut dirimu gagal.\n\nKelak, kamu akan memahami bahwa tumbuh tidak selalu terlihat seperti berlari maju. Kadang tumbuh berarti berani berhenti, mengakui lelah, lalu mencoba lagi dengan cara yang lebih ramah pada diri sendiri.\n\nTerima kasih sudah bertahan sejauh ini. Aku akan melanjutkannya dari sini.`},
+ {id:5,title:"Senja Tidak Pernah Terburu-buru",category:"Puisi",date:"28 September 2026",read:"2 menit",art:"art-5",excerpt:"Langit mengajarkan bahwa perubahan warna pun bisa berlangsung perlahan, tanpa perlu meminta maaf.",content:`senja tidak meminta maaf\nkarena datang sebentar.\nia hanya mewarnai langit,\nlalu pergi saat waktunya tiba.\n\nbarangkali kita juga begitu:\ntidak harus tinggal selamanya\nuntuk menjadi berarti,\ntidak harus selalu terang\nuntuk layak dinanti.\n\nmaka sore ini,\nbiarkan yang selesai menjadi selesai.\nbiarkan yang belum datang\nmenemukan jalannya sendiri.\n\nkita duduk sebentar,\nmenyaksikan langit berubah,\ndan belajar bahwa melepas\nbisa selembut warna jingga.`},
+ {id:6,title:"Kedai Kecil di Ujung Jalan",category:"Cerita",date:"21 September 2026",read:"5 menit",art:"art-6",excerpt:"Ada kedai yang tidak menawarkan banyak hal, selain kursi dekat jendela dan kesempatan untuk memulai lagi.",content:`Di ujung jalan yang jarang dilewati, ada sebuah kedai kecil dengan papan nama yang mulai pudar. Tidak ada musik keras atau menu panjang. Hanya kopi, teh, beberapa buku bekas, dan seorang pemilik yang selalu menyapa seolah sudah lama mengenalmu.\n\nAku datang ke sana pada sore yang terasa terlalu panjang. Pesan di ponsel sepi, pekerjaan belum menemukan bentuk, dan pikiranku sibuk membandingkan hidupku dengan hidup orang lain.\n\nPemilik kedai meletakkan secangkir teh di mejaku. “Hari ini berat?” tanyanya, sederhana sekali.\n\nAku mengangguk. Ia tidak buru-buru memberi nasihat. Ia hanya membiarkanku duduk, menatap jalan, dan menghabiskan teh selagi hangat.\n\nAneh, betapa kadang yang kita perlukan bukan solusi yang hebat. Hanya ruang kecil yang tidak menuntut kita menjadi siapa-siapa.\n\nSejak hari itu, aku kembali sesekali. Bukan karena semua masalahku selesai di sana, melainkan karena aku ingat: dunia masih punya sudut-sudut kecil yang terasa baik. Dan kadang, itu cukup untuk membuat langkah berikutnya terasa mungkin.`}
+];
+const grid=document.getElementById('postGrid'), search=document.getElementById('searchInput'), filters=document.getElementById('filters');
+let activeCategory='Semua', lastFocused=null;
+function renderPosts(){
+ const q=search.value.trim().toLocaleLowerCase('id');
+ const list=posts.filter(p=>(activeCategory==='Semua'||p.category===activeCategory)&&(!q||(p.title+' '+p.excerpt+' '+p.content+' '+p.category).toLocaleLowerCase('id').includes(q)));
+ grid.innerHTML='';
+ if(!list.length){grid.innerHTML='<div class="empty"><div style="font:2rem Georgia,serif;color:#bd7d88">Belum ditemukan</div><p>Coba kata kunci lain atau pilih kategori berbeda, ya.</p></div>';return}
+ list.forEach(p=>{
+  const card=document.createElement('article');card.className='post-card';card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label','Baca artikel '+p.title);
+  card.innerHTML=`<div class="card-art ${p.art}"><span class="art-label">${p.category}</span></div><div class="card-body"><div class="meta">${p.date} · ${p.read}</div><h3>${p.title}</h3><p class="excerpt">${p.excerpt}</p><span class="readmore">Baca selengkapnya <span aria-hidden="true">↗</span></span></div>`;
+  card.addEventListener('click',()=>openArticle(p));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openArticle(p)}});
+  grid.appendChild(card);
+ });
+}
+function openArticle(p){
+ lastFocused=document.activeElement;
+ document.getElementById('modalCategory').textContent=p.category;
+ document.getElementById('modalTitle').textContent=p.title;
+ document.getElementById('modalDate').textContent=p.date+' · '+p.read+' baca';
+ document.getElementById('modalContent').textContent=p.content;
+ document.getElementById('articleModal').classList.add('open');document.body.style.overflow='hidden';document.getElementById('modalClose').focus();
+}
+function closeArticle(){document.getElementById('articleModal').classList.remove('open');document.body.style.overflow='';if(lastFocused)lastFocused.focus()}
+search.addEventListener('input',renderPosts);
+filters.addEventListener('click',e=>{const b=e.target.closest('button[data-category]');if(!b)return;activeCategory=b.dataset.category;filters.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));renderPosts()});
+document.getElementById('modalClose').addEventListener('click',closeArticle);
+document.getElementById('articleModal').addEventListener('click',e=>{if(e.target.id==='articleModal')closeArticle()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeArticle()});
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('show');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('show');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+document.getElementById('subscribeForm').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('emailInput').value.trim();if(!email)return;document.getElementById('formMsg').textContent='Terima kasih! '+email+' sudah tercatat untuk demo ini. ✿';e.target.reset()});
+document.getElementById('year').textContent=new Date().getFullYear();
+renderPosts();
+</script>
+</body>
+</html>
